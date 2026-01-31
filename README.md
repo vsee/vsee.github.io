@@ -132,7 +132,7 @@ Edit `src/data/social-links.json`:
 
 ```json
 {
-  "platform": "github",  // github, linkedin, scholar, orcid, email
+  "platform": "github",  // github, linkedin, scholar, orcid
   "url": "https://github.com/vsee",
   "label": "GitHub"
 }

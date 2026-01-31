@@ -3,7 +3,6 @@ import GitHub from './Icons/GitHub.astro';
 import LinkedIn from './Icons/LinkedIn.astro';
 import GoogleScholar from './Icons/GoogleScholar.astro';
 import ORCID from './Icons/ORCID.astro';
-import Email from './Icons/Email.astro';
 
 interface Props {
   platform: string;
@@ -18,7 +17,6 @@ const icons: Record<string, any> = {
   linkedin: LinkedIn,
   scholar: GoogleScholar,
   orcid: ORCID,
-  email: Email,
 };
 
 const Icon = icons[platform];
@@ -26,8 +24,8 @@ const Icon = icons[platform];
 
 <a
   href={url}
-  target={platform === 'email' ? undefined : '_blank'}
-  rel={platform === 'email' ? undefined : 'noopener noreferrer'}
+  target="_blank"
+  rel="noopener noreferrer"
   class="social-chip"
 >
   {Icon && <Icon class="w-4 h-4" />}

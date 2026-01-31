@@ -18,10 +18,5 @@
     "platform": "orcid",
     "url": "https://orcid.org/0000-0002-0120-895X",
     "label": "ORCID"
-  },
-  {
-    "platform": "email",
-    "url": "mailto:volker@volkerseeker.com",
-    "label": "Email"
   }
 ]
