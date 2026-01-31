@@ -1,0 +1,108 @@
+---
+import Award from './Icons/Award.astro';
+import PDF from './Icons/PDF.astro';
+import ExternalLink from './Icons/ExternalLink.astro';
+import Slides from './Icons/Slides.astro';
+
+interface Props {
+  title: string;
+  authors: string[];
+  venue: string;
+  venueFullName?: string;
+  year: number;
+  award?: string;
+  links: {
+    pdf?: string;
+    preprint?: string;
+    ieee?: string;
+    acm?: string;
+    arxiv?: string;
+    slides?: string;
+  };
+}
+
+const { title, authors, venue, venueFullName, year, award, links } = Astro.props;
+
+// Format authors, highlighting "V. Seeker"
+const formatAuthors = (authorList: string[]) => {
+  return authorList.map((author) => {
+    if (author.includes('Seeker') || author === 'V. Seeker') {
+      return `<strong class="text-slate-900 dark:text-slate-100">${author}</strong>`;
+    }
+    return author;
+  }).join(', ');
+};
+---
+
+<article class="publication-card">
+  <!-- Award badge -->
+  {award && (
+    <div class="mb-3">
+      <span class="award-badge">
+        <Award class="w-3.5 h-3.5" />
+        {award}
+      </span>
+    </div>
+  )}
+
+  <!-- Title with year -->
+  <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 leading-tight">
+    {title}
+    <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+      {year}
+    </span>
+  </h3>
+
+  <!-- Authors -->
+  <p class="mt-2 text-sm text-slate-600 dark:text-slate-400" set:html={formatAuthors(authors)} />
+
+  <!-- Venue -->
+  <p class="mt-1 text-sm text-slate-500 dark:text-slate-500">
+    <span class="font-medium">{venue}</span>
+    {venueFullName && venue !== venueFullName && (
+      <span class="hidden sm:inline"> - {venueFullName}</span>
+    )}
+  </p>
+
+  <!-- Links -->
+  {Object.keys(links).length > 0 && (
+    <div class="mt-4 flex flex-wrap gap-2">
+      {links.pdf && (
+        <a href={links.pdf} target="_blank" rel="noopener noreferrer" class="pub-link">
+          <PDF class="w-4 h-4" />
+          PDF
+        </a>
+      )}
+      {links.preprint && (
+        <a href={links.preprint} target="_blank" rel="noopener noreferrer" class="pub-link">
+          <PDF class="w-4 h-4" />
+          Preprint
+        </a>
+      )}
+      {links.arxiv && (
+        <a href={links.arxiv} target="_blank" rel="noopener noreferrer" class="pub-link">
+          <ExternalLink class="w-4 h-4" />
+          arXiv
+        </a>
+      )}
+      {links.ieee && (
+        <a href={links.ieee} target="_blank" rel="noopener noreferrer" class="pub-link">
+          <ExternalLink class="w-4 h-4" />
+          IEEE
+        </a>
+      )}
+      {links.acm && (
+        <a href={links.acm} target="_blank" rel="noopener noreferrer" class="pub-link">
+          <ExternalLink class="w-4 h-4" />
+          ACM
+        </a>
+      )}
+      {links.slides && (
+        <a href={links.slides} target="_blank" rel="noopener noreferrer" class="pub-link">
+          <Slides class="w-4 h-4" />
+          Slides
+        </a>
+      )}
+    </div>
+  )}
+</article>

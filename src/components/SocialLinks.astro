@@ -1,0 +1,14 @@
+---
+import SocialChip from './SocialChip.astro';
+import socialLinks from '../data/social-links.json';
+---
+
+<div class="flex flex-wrap gap-3 justify-center md:justify-start">
+  {socialLinks.map((link) => (
+    <SocialChip
+      platform={link.platform}
+      url={link.url}
+      label={link.label}
+    />
+  ))}
+</div>

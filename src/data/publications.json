@@ -1,0 +1,83 @@
+[
+  {
+    "id": "2025_arxiv_cwm",
+    "title": "CWM: An Open-Weights LLM for Research on Code Generation with World Models",
+    "authors": ["FAIR CodeGen", "J. Copet", "Q. Carbonneaux", "G. Cohen", "J. Gehring", "J. Kahn", "J. Kossen", "F. Kreuk", "V. Seeker", "et al."],
+    "venue": "arXiv",
+    "venueFullName": "arXiv preprint",
+    "year": 2025,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2510.02387"
+    }
+  },
+  {
+    "id": "2024_arxiv_code_transforms",
+    "title": "Don't Transform the Code, Code the Transforms: Towards Precise Code Rewriting using LLMs",
+    "authors": ["C. Cummins", "V. Seeker", "J. Armengol-Estapé", "A.H. Markosyan", "G. Synnaeve", "H. Leather"],
+    "venue": "arXiv",
+    "venueFullName": "arXiv preprint",
+    "year": 2024,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2410.08806"
+    }
+  },
+  {
+    "id": "2024_arxiv_llm_compiler_meta",
+    "title": "Meta Large Language Model Compiler: Foundation Models of Compiler Optimization",
+    "authors": ["C. Cummins", "V. Seeker", "D. Grubisic", "B. Roziere", "J. Gehring", "G. Synnaeve", "H. Leather"],
+    "venue": "arXiv",
+    "venueFullName": "arXiv preprint",
+    "year": 2024,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2407.02524"
+    }
+  },
+  {
+    "id": "2024_cgo_heureka",
+    "title": "Revealing Compiler Heuristics through Automated Discovery and Optimization",
+    "authors": ["V. Seeker", "C. Cummins", "M. Cole", "B. Franke", "K. Hazelwood", "H. Leather"],
+    "venue": "CGO",
+    "venueFullName": "IEEE/ACM International Symposium on Code Generation and Optimization",
+    "year": 2024,
+    "award": "Distinguished Paper Award",
+    "links": {
+      "preprint": "/files/papers/cgo24_heureka_preprint.pdf",
+      "ieee": "https://ieeexplore.ieee.org/abstract/document/10444847"
+    }
+  },
+  {
+    "id": "2023_arxiv_llm_compiler",
+    "title": "Large Language Models for Compiler Optimization",
+    "authors": ["C. Cummins", "V. Seeker", "D. Grubisic", "M. Elhoushi", "Y. Liang", "B. Roziere", "J. Gehring", "et al."],
+    "venue": "arXiv",
+    "venueFullName": "arXiv preprint",
+    "year": 2023,
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2309.07062"
+    }
+  },
+  {
+    "id": "2014_iiswc_lagmarking",
+    "title": "Measuring QoE of Interactive Workloads and Characterising Frequency Governors on Mobile Devices",
+    "authors": ["V. Seeker", "P. Petoumenos", "H. Leather", "B. Franke"],
+    "venue": "IISWC",
+    "venueFullName": "IEEE International Symposium on Workload Characterization",
+    "year": 2014,
+    "award": "Best Paper Award",
+    "links": {
+      "pdf": "/files/papers/2014_IISWC_lagmarking.pdf",
+      "slides": "/files/talks/2014_IISWC.pdf"
+    }
+  },
+  {
+    "id": "2011_samos_iss_multi",
+    "title": "Scalable Multi-Core Simulation Using Parallel Dynamic Binary Translation",
+    "authors": ["O. Almer", "I. Böhm", "T.J.K. Edler von Koch", "B. Franke", "S. Kyle", "V. Seeker", "C. Thompson", "N. Topham"],
+    "venue": "IC-SAMOS",
+    "venueFullName": "International Conference on Embedded Computer Systems: Architectures, Modelling, and Simulation",
+    "year": 2011,
+    "links": {
+      "pdf": "/files/papers/2011_SAMOS_iss_multi.pdf"
+    }
+  }
+]

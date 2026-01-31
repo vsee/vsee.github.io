@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import About from '../components/About.astro';
+import WhatIWorkOn from '../components/WhatIWorkOn.astro';
+import Bio from '../components/Bio.astro';
+import Publications from '../components/Publications.astro';
+import FunProjects from '../components/FunProjects.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Volker Seeker - Founding Engineer at Axiom"
+  description="Personal website of Volker Seeker, Founding Engineer at Axiom. Building ML systems for mathematical reasoning. Previously at Meta FAIR and University of Edinburgh."
+>
+  <main>
+    <!-- Hero Section -->
+    <Hero />
+
+    <!-- About Section -->
+    <Section id="about" title="About Me">
+      <About />
+    </Section>
+
+    <!-- What I Work On Section -->
+    <Section id="work" title="What I Work On" class="bg-slate-50 dark:bg-slate-800/30">
+      <WhatIWorkOn />
+    </Section>
+
+    <!-- Background Section -->
+    <Section id="background" title="Background">
+      <Bio />
+    </Section>
+
+    <!-- Publications Section -->
+    <Section id="publications" title="Publications" class="bg-slate-50 dark:bg-slate-800/30">
+      <Publications />
+    </Section>
+
+    <!-- Fun Projects Section -->
+    <Section id="projects" title="Fun Projects">
+      <FunProjects />
+    </Section>
+  </main>
+
+  <Footer />
+</Layout>

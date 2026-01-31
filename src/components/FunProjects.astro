@@ -1,0 +1,86 @@
+---
+import ExternalLink from './Icons/ExternalLink.astro';
+---
+
+<div class="space-y-8">
+  <!-- Zeit² Project -->
+  <article class="overflow-hidden rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700">
+    <!-- Game Image -->
+    <a
+      href="https://store.steampowered.com/app/33390/Zeit/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block overflow-hidden"
+    >
+      <img
+        src="/images/zeit2.jpg"
+        alt="Zeit² - Time-manipulation puzzle platformer"
+        class="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+      />
+    </a>
+
+    <!-- Content -->
+    <div class="p-6">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">
+            Zeit²
+          </h3>
+          <p class="text-sm text-slate-500 dark:text-slate-500">
+            Brightside Games &middot; Published by Ubisoft &middot; 2010
+          </p>
+        </div>
+      </div>
+
+      <div class="prose prose-slate dark:prose-invert max-w-none text-slate-600 dark:text-slate-400">
+        <p>
+          Before ML, I made games. During my undergrad at TU Berlin, I co-founded a small game
+          development studio called <strong>Brightside Games</strong>. We built Zeit², a time-manipulation
+          puzzle platformer that got published by Ubisoft and released on Steam and Xbox Live Arcade.
+        </p>
+
+        <p class="mt-4">
+          Turns out building a game studio and shipping a commercial game is excellent training for
+          startup life—tight deadlines, constrained resources, and figuring out how to actually finish
+          things. Eventually left to pursue a PhD at Edinburgh, but the experience of taking something
+          from concept to shipped product stuck with me.
+        </p>
+
+        <p class="mt-4 text-slate-500 dark:text-slate-500 italic">
+          The game's still on Steam if you're into indie platformers with time-bending mechanics.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a
+          href="https://store.steampowered.com/app/33390/Zeit/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pub-link"
+        >
+          <ExternalLink class="w-4 h-4" />
+          Steam
+        </a>
+        <a
+          href="https://en.wikipedia.org/wiki/Zeit%C2%B2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pub-link"
+        >
+          <ExternalLink class="w-4 h-4" />
+          Wikipedia
+        </a>
+        <a
+          href="https://www.ign.com/games/zeit-2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pub-link"
+        >
+          <ExternalLink class="w-4 h-4" />
+          IGN
+        </a>
+      </div>
+    </div>
+  </article>
+</div>

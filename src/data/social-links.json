@@ -1,0 +1,27 @@
+[
+  {
+    "platform": "github",
+    "url": "https://github.com/vsee",
+    "label": "GitHub"
+  },
+  {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/in/vseeker",
+    "label": "LinkedIn"
+  },
+  {
+    "platform": "scholar",
+    "url": "https://scholar.google.com/citations?user=REqO49QAAAAJ&hl=en",
+    "label": "Google Scholar"
+  },
+  {
+    "platform": "orcid",
+    "url": "https://orcid.org/0000-0002-0120-895X",
+    "label": "ORCID"
+  },
+  {
+    "platform": "email",
+    "url": "mailto:volker@volkerseeker.com",
+    "label": "Email"
+  }
+]

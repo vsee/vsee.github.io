@@ -1,0 +1,16 @@
+---
+import BioItem from './BioItem.astro';
+import bio from '../data/bio.json';
+---
+
+<div class="max-w-2xl">
+  {bio.map((item) => (
+    <BioItem
+      dateRange={item.dateRange}
+      role={item.role}
+      organization={item.organization}
+      location={item.location}
+      current={item.current}
+    />
+  ))}
+</div>

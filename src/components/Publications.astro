@@ -1,0 +1,34 @@
+---
+import PublicationCard from './PublicationCard.astro';
+import publications from '../data/publications.json';
+import GoogleScholar from './Icons/GoogleScholar.astro';
+---
+
+<div class="mb-8 flex flex-wrap items-center justify-between gap-4">
+  <p class="text-slate-600 dark:text-slate-400">
+    A selection of my publications. For a complete list, see my Google Scholar profile.
+  </p>
+  <a
+    href="https://scholar.google.com/citations?user=REqO49QAAAAJ&hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="social-chip"
+  >
+    <GoogleScholar class="w-4 h-4" />
+    <span>Google Scholar</span>
+  </a>
+</div>
+
+<div class="space-y-6">
+  {publications.map((pub) => (
+    <PublicationCard
+      title={pub.title}
+      authors={pub.authors}
+      venue={pub.venue}
+      venueFullName={pub.venueFullName}
+      year={pub.year}
+      award={pub.award}
+      links={pub.links}
+    />
+  ))}
+</div>
